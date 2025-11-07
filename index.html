@@ -10,43 +10,57 @@
       background: #fafafa;
       color: #333;
     }
-    h1, h2 {
+    h1 {
       text-align: center;
+      margin-bottom: 10px;
+    }
+    p {
+      text-align: center;
+      color: #666;
     }
     table {
       border-collapse: collapse;
-      margin: 20px auto;
-      width: 90%;
-      max-width: 1000px;
+      margin: 30px auto;
+      width: 95%;
+      max-width: 1300px;
     }
     th, td {
       border: 1px solid #ddd;
-      padding: 12px;
+      padding: 10px;
       text-align: center;
+      vertical-align: middle;
     }
     th {
       background: #f2f2f2;
+      font-weight: bold;
     }
-    .placeholder {
-      color: #888;
-      font-style: italic;
+    td:first-child {
+      text-align: left;
+      width: 35%;
+      font-weight: 500;
+    }
+    audio {
+      width: 220px;
+      outline: none;
     }
   </style>
 </head>
 <body>
-  <h1>Speech Samples from IPACue-TTS model</h1>
-  <p style="text-align:center">Audio examples will be added soon. Each row = sentence, each column = model output.</p>
+  <h1>Speech Samples from IPACue-TTS and Baseline Models</h1>
+  <p>Each row represents a sentence synthesized by different TTS models for comparison.</p>
 
   <table>
     <tr>
       <th>Sentence</th>
-      <th>Ground Truth</th>
-      <th>Model A</th>
-      <th>Model B</th>
+      <th>YourTTS</th>
+      <th>Matcha-TTS</th>
+      <th>F5-TTS</th>
+      <th>IPACue-TTS</th>
     </tr>
 
     <tr>
       <td>आप सब स्वस्थ रहें देश के लिए सक्रिय रहें</td>
+      <td><audio controls><source src="audio/hindi_ref1_hindi_src5.wav" type="audio/wav"></audio></td>
       <td><audio controls><source src="audio/hindi_ref1_hindi_src5.wav" type="audio/wav"></audio></td>
       <td><audio controls><source src="audio/hindi_ref1_hindi_src6.wav" type="audio/wav"></audio></td>
       <td><audio controls><source src="audio/hindi_ref1_hindi_src7.wav" type="audio/wav"></audio></td>
@@ -54,9 +68,74 @@
 
     <tr>
       <td>बहुत बहुत धन्यवाद</td>
-      <td><audio controls><source src="audio/hindi_ref1_hindi_src5.wav" type="audio/wav"></audio></td>
-      <td><audio controls><source src="audio/hindi_ref1_hindi_src6.wav" type="audio/wav"></audio></td>
-      <td><audio controls><source src="audio/hindi_ref1_hindi_src7.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample2_yourtts.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample2_matcha.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample2_f5.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample2_ipacue.wav" type="audio/wav"></audio></td>
+    </tr>
+
+    <tr>
+      <td>मेरे प्यारे देशवासियो नमस्कार</td>
+      <td><audio controls><source src="audio/sample3_yourtts.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample3_matcha.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample3_f5.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample3_ipacue.wav" type="audio/wav"></audio></td>
+    </tr>
+
+    <tr>
+      <td>आज हम अपने अनुभव साझा करेंगे</td>
+      <td><audio controls><source src="audio/sample4_yourtts.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample4_matcha.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample4_f5.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample4_ipacue.wav" type="audio/wav"></audio></td>
+    </tr>
+
+    <tr>
+      <td>हम सबको मिलकर आगे बढ़ना है</td>
+      <td><audio controls><source src="audio/sample5_yourtts.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample5_matcha.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample5_f5.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample5_ipacue.wav" type="audio/wav"></audio></td>
+    </tr>
+
+    <tr>
+      <td>भारत की विविधता ही हमारी पहचान है</td>
+      <td><audio controls><source src="audio/sample6_yourtts.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample6_matcha.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample6_f5.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample6_ipacue.wav" type="audio/wav"></audio></td>
+    </tr>
+
+    <tr>
+      <td>हर भाषा में अपनी एक अनोखी सुंदरता होती है</td>
+      <td><audio controls><source src="audio/sample7_yourtts.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample7_matcha.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample7_f5.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample7_ipacue.wav" type="audio/wav"></audio></td>
+    </tr>
+
+    <tr>
+      <td>नए युग में तकनीक की भूमिका अहम है</td>
+      <td><audio controls><source src="audio/sample8_yourtts.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample8_matcha.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample8_f5.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample8_ipacue.wav" type="audio/wav"></audio></td>
+    </tr>
+
+    <tr>
+      <td>हमारी संस्कृति हमें एकजुट रखती है</td>
+      <td><audio controls><source src="audio/sample9_yourtts.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample9_matcha.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample9_f5.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample9_ipacue.wav" type="audio/wav"></audio></td>
+    </tr>
+
+    <tr>
+      <td>आप सभी का धन्यवाद</td>
+      <td><audio controls><source src="audio/sample10_yourtts.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample10_matcha.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample10_f5.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/sample10_ipacue.wav" type="audio/wav"></audio></td>
     </tr>
   </table>
 </body>
